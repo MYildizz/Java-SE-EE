@@ -1,0 +1,4 @@
+-Questions in Lab Slide
+-Answer of first and second questions in Lab2_1-2 Directory
+-Answer of third question in Lab2_3 Directory
+-Answer of additional question in Lab_Add Directory

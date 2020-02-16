@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head></h:head> 
+<body> 
+
+	<h:outputLabel value="second sayfasına ulaştınız" />
+	
+	<h:form>
+	
+		<h:inputHidden value="" />
+	
+		<h:panelGrid columns="2" border="2" cellpadding="12" cellspacing="35">
+	
+		<f:facet name="header">
+		
+		<h:outputLabel value="KAYIT Alanı "/>
+		
+		</f:facet>
+		
+
+		
+		<h:outputLabel value="Adınız : "/>
+		<h:inputText value="" />
+
+		<h:outputLabel value="Soyadınız : "/>
+		<h:inputText value="#{kayitBilgisiBean.adiniz}" />
+		
+		<h:outputLabel value="adres" />
+		<h:inputTextarea value="" cols="25" rows="10" />	
+		
+		<h:outputLabel value="kimlik No :"></h:outputLabel>
+		<h:inputSecret value=""></h:inputSecret>
+		
+		<h:outputLabel value="sehir : "></h:outputLabel>
+		<h:selectOneMenu value="">
+			<f:selectItem itemLabel="Ankara" itemValue="ankara"/>
+			<f:selectItem itemLabel="Istanbul" itemValue="istanbul"/>
+			<f:selectItem itemLabel="Antalya" itemValue="antalya"/>
+		</h:selectOneMenu>
+		
+		<h:outputFormat value="{0} {1} : " >
+		<f:param value="Takım : "></f:param>
+		<f:param value="Seçiniz : "></f:param>
+		</h:outputFormat>
+		
+		<h:commandButton  value="verileri kaydet" />
+	
+		<f:facet name="footer">
+		
+		<h:outputText value="Footer Alanı "/>
+		
+		</f:facet>	
+		
+	</h:panelGrid>
+	
+	
+	</h:form>
+
+</body> 
+</html>

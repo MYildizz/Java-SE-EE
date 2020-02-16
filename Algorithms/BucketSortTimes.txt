@@ -1,0 +1,10 @@
+Array with index 5 => 11 milliseconds 
+Array with index 10 => 11 milliseconds 
+Array with index 30 => 10 milliseconds 
+Array with index 50 => 11 milliseconds 
+Array with index 100 => 10 milliseconds 
+Array with index 200 => 12 milliseconds 
+Array with index 500 => 11 milliseconds 
+Array with index 700 => 11 milliseconds 
+Array with index 850 => 11 milliseconds 
+Array with index 1000 => 11 milliseconds 
